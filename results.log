@@ -1,0 +1,31 @@
+### Executing: checkov -d . --external-checks-dir . -c test  --compact
+
+       _               _              
+   ___| |__   ___  ___| | _______   __
+  / __| '_ \ / _ \/ __| |/ / _ \ \ / /
+ | (__| | | |  __/ (__|   < (_) \ V / 
+  \___|_| |_|\___|\___|_|\_\___/ \_/  
+                                      
+By bridgecrew.io | version: 2.2.236 
+
+terraform scan results:
+
+Passed checks: 1, Failed checks: 1, Skipped checks: 0
+
+Check: test: "Ensure that RDP (port 3389) access is restricted from the internet"
+	PASSED for resource: azurerm_network_security_group.pass
+	File: /test.tf:6-10
+Check: test: "Ensure that RDP (port 3389) access is restricted from the internet"
+	FAILED for resource: azurerm_network_security_group.fail
+	File: /test.tf:25-29
+terraform_plan scan results:
+
+Passed checks: 0, Failed checks: 2, Skipped checks: 0
+
+Check: test: "Ensure that RDP (port 3389) access is restricted from the internet"
+	FAILED for resource: azurerm_network_security_group.fail
+	File: /tfplan.json:13-19
+Check: test: "Ensure that RDP (port 3389) access is restricted from the internet"
+	FAILED for resource: azurerm_network_security_group.pass
+	File: /tfplan.json:31-37
+
