@@ -3,7 +3,7 @@
 #### Issue: 
 ![Console Output](console.png)
 
-#### [test.yaml](test.yaml)
+#### [test.yml](test.yml)
 ```yaml
 ---
 metadata:
