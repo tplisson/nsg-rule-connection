@@ -1,0 +1,22 @@
+---
+metadata:
+  name: "Ensure that RDP (port 3389) access is restricted from the internet"
+  id: test
+  guidelines: "Ensure that RDP (port 3389) access is restricted from the internet"
+  category: network
+  severity: high
+scope:
+  provider: azure 
+definition:
+  and:
+    - cond_type: connection
+      resource_types:
+      - azurerm_network_security_group
+      connected_resource_types: 
+      - azurerm_network_security_rule
+      operator: exists
+    - cond_type: filter
+      attribute: resource_type
+      value:
+      - azurerm_network_security_group
+      operator: within
