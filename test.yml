@@ -1,10 +1,6 @@
----
 metadata:
-  name: "Ensure that RDP (port 3389) access is restricted from the internet"
+  name: "Ensure that connection exists between NSG and rule"
   id: test
-  guidelines: "Ensure that RDP (port 3389) access is restricted from the internet"
-  category: network
-  severity: high
 scope:
   provider: azure 
 definition:
