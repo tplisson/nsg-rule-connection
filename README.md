@@ -1,11 +1,9 @@
 # nsg-rule-connection
 
-
-
-Reference-style: 
+#### Issue: 
 ![Console Output](console.png)
 
-[test.yaml](test.yaml)
+#### [test.yaml](test.yaml)
 ```yaml
 ---
 metadata:
@@ -28,7 +26,7 @@ definition:
       operator: within
 ```
 
-[test.tf](test.tf)
+#### [test.tf](test.tf)
 ```hcl
 resource "azurerm_resource_group" "test" {
   name     = "test"
