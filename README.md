@@ -27,4 +27,3 @@ definition:
 Reference-style: 
 ![Console Output](console.png)
 
-# nsg-rule-connection
